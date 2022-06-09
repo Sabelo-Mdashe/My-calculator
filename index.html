@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body class="container-fluid">
+    <h1 class="mt-5 mb-5">CALCULATOR</h1>
+    <div class="container outer_container bg-light">
+      <div class="calc shadow p-3 mb-5 bg-body rounded">
+        <div class="theme_toogler active">
+          <i class="toogler_icon"></i>
+        </div>
+        <div class="row fs-3 mb-2 bg-secondary text-end" id="output">0</div>
+        <div class="calc_buttons">
+          <div class="row mb-3 fs-1">
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="clearCalc()"
+              >
+                C
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('')"
+              >
+                (
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('%')"
+              >
+                )
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('/')"
+              >
+                /
+              </button>
+            </div>
+          </div>
+          <div class="row mb-3 fs-1">
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('7')"
+              >
+                7
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('8')"
+              >
+                8
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('9')"
+              >
+                9
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('*')"
+              >
+                *
+              </button>
+            </div>
+          </div>
+          <div class="row mb-3 fs-1">
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('4')"
+              >
+                4
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('5')"
+              >
+                5
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('6')"
+              >
+                6
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('-')"
+              >
+                -
+              </button>
+            </div>
+          </div>
+
+          <div class="row mb-3 fs-1">
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('1')"
+              >
+                1
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('2')"
+              >
+                2
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('3')"
+              >
+                3
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 operator"
+                onclick="addNum('+')"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="row mb-3 fs-1">
+            <div class="col text-center">
+              <button class="bg-transparent border-0 delete_btn" onclick="">
+                DEL
+              </button>
+            </div>
+            <div class="col text-center">
+              <button
+                class="bg-transparent border-0 number"
+                onclick="addNum('0')"
+              >
+                0
+              </button>
+            </div>
+            <div class="col text-center">
+              <button class="bg-transparent border-0" onclick="addNum('.')">
+                .
+              </button>
+            </div>
+            <div class="col text-center">
+              <button class="bg-transparent border-0" onclick="calc('=')">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
